@@ -1,10 +1,13 @@
-# WAP a program to input two values  from user and find third angle of the triangle
+#WAP to calculate total salary of employee 
+# based on basic, da=10% of basic,
+# ta=12% of basic, hra=15% of basic.
+basic=float(input("Enter the basic salary :"))
+da=(basic*10)/100
+ta=(basic*12)/100
+hra=(basic*15)/100
+tota_salary=(basic+da+ta+hra)
 
-num=int(input("Enter the first angle..:"))
-num2=int(input("Enter the second angle :"))
-
-third=180-(num+num2)
-print(f"third angle is :{third} ")
-
-
-
+print("da salary",da)
+print("ta salary",ta)
+print("hra salary",hra)
+print("total_salary :",tota_salary)

@@ -1,12 +1,10 @@
-#WAP a program to convert the day into years,week and days
+#Write a program to swap two numbers without using third variable.
+a=int(input("Enter the a values :"))
+b=int(input("Enter the b values :"))
 
-day=int(input("Enter the days :"))
-years=(day//365)
-remainingday=(day%365)
-week=remainingday//7
-days=remainingday%7
+temp=a
+a=b
+b=temp
 
-print("years are :",years)
-print("remaingdays",remainingday)
-print("week are",week)
-print("days are ",day)
+print("a :",a)
+print("b :",b)

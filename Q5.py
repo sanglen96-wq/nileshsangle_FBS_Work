@@ -1,10 +1,8 @@
-#WAP to calculate the compound interest
+#WAP to calculate the selling price of book based on cost price and discount
 
-p=float(input("Enter the principle :"))
-r=float(input("Enter the rate :"))
-t=float(input("Enter the time :"))
+cost_price=float(input("Enter the cost_price :"))
+discount_price=float(input("Enter the discount_price :"))
 
-amount=p*(1+r/100)**t
-ci=amount-p
-print(f"amount is :{amount}")
-print(f"compound interest is :{ci}")
+discount_price=(cost_price*discount_price)/100
+selling_price=(discount_price-cost_price)
+print("selling price is :",selling_price)

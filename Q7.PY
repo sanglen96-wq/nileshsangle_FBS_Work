@@ -1,14 +1,8 @@
+#WAP to calculate and sum of three-digit
 
-#WAP to calculate root of quadric equation
-import math
-a=float(input("Enter the a :"))
-b=float(input("Enter the b:"))
-c=float(input("Enter the c:"))
-
-d=b*b-4*a*c
-sqrt_d=math.sqrt(d)
-root1=(-b+sqrt_d)/(2*a)
-root2=(-b - sqrt_d)/(2*a)
-
-print("root 1:",root1)
-print("root 2:",root2)
+num=int(input("Enter the num :"))
+a=num//100
+b=(num//10)%10
+c=(num%10)
+sum=a+b+c
+print("sum of three digit :",sum)

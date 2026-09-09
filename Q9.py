@@ -1,5 +1,9 @@
-#WAP to enter the base and height of triangle and find its area
-base=int(input("Enter the base :"))
-height=int(input("Enter the height :"))
-area=(base*height)/2
-print("area is the :",area)
+#WAP to swap of two number without using the third variable
+
+a=int(input("Enter the a values :"))
+b=int(input("Enter the b values :"))
+a=b
+b=a
+print("a values :",a)
+print()
+print("b values  :",b)
