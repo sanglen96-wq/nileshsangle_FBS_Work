@@ -1,6 +1,15 @@
-#convert the temprature from celcius to fahrenheit.(c/5=(F-32)/9)
+#Write a program to input any alphabet and check whether
+# it is vowel or consonant.
 
-celcius=float(input("Enter the celcius :"))
-fahrenheit=(celcius*9/5)+32
-
-print("fahreneit is :",fahrenheit)
+ch=str(input("Enter the your choice :"))
+if ch.isalpha():
+    print("this is the alphabet :",ch)
+    if ch.lower() in"aeiou":
+        print("is a vowel")
+        
+else:
+    if ch.isdigit():
+        print("this is the digit")
+    else:
+        print("Enter the valid...")
+print("program is the sucessful....")
