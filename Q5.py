@@ -1,8 +1,11 @@
-#WAP to calculate the selling price of book based on cost price and discount
+#WAP to print Fibonacci series upto n.
 
-cost_price=float(input("Enter the cost_price :"))
-discount_price=float(input("Enter the discount_price :"))
-
-discount_price=(cost_price*discount_price)/100
-selling_price=(discount_price-cost_price)
-print("selling price is :",selling_price)
+n=int(input("Enter the number :"))
+a=0
+b=1
+for i in range(n):
+    print(a,end=" ")
+    c=a+b
+    a=b
+    b=c
+    

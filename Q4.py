@@ -1,9 +1,8 @@
-#4WAP a program calculate the simple interst
+#WAP to print factorial of a number
+n=int(input("enter the number :"))
+fact=1
 
-p=100000
-t=3
-r=2
-
-si=p*r*t/100
-
-print("simple interst is :",si)
+for i in range(1,n+1):
+    fact=fact*i
+    print(fact)
+    fact=fact+1

@@ -1,31 +1,20 @@
-#Write a program to accept an integer amount from user and tell minimum number 
-# of notes needed for representing that amount.
+#WAP to check if given number Strong Number.
 
-amount = int(input("Enter the amount: "))
+num = int(input("Enter the number: "))
+temp = num
+total = 0
 
-n500 = amount // 500
-amount = amount % 500
+while temp > 0:
+    digit = temp % 10
+    fact = 1
 
-n200 = amount // 200
-amount = amount % 200
+    for i in range(1, digit + 1):
+        fact = fact * i
 
-n100 = amount // 100
-amount = amount % 100
+    total = total + fact
+    temp = temp // 10
 
-n50 = amount // 50
-amount = amount % 50
-
-n20 = amount // 20
-amount = amount % 20
-
-n10 = amount // 10
-amount = amount % 10
-
-n5 = amount // 5
-amount = amount % 5
-
-n1 = amount // 1
-
-total = n500 + n200 + n100 + n50 + n20 + n10 + n5 + n1
-
-print("Minimum number of notes =", total)
+if total == num:
+    print("Strong Number")
+else:
+    print("Not a Strong Number")

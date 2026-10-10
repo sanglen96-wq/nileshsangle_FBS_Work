@@ -1,13 +1,13 @@
-#WAP to calculate total salary of employee 
-# based on basic, da=10% of basic,
-# ta=12% of basic, hra=15% of basic.
-basic=float(input("Enter the basic salary :"))
-da=(basic*10)/100
-ta=(basic*12)/100
-hra=(basic*15)/100
-tota_salary=(basic+da+ta+hra)
+#Question 6: WAP to check if a given number is prime or not.
 
-print("da salary",da)
-print("ta salary",ta)
-print("hra salary",hra)
-print("total_salary :",tota_salary)
+number=int(input("Enter the number :"))
+
+if number<=1:
+    print("not prime")
+else:
+    for i in range(2,number):
+        if number % i==0:
+            print("not prime")
+            break
+        else:
+            print("are the prime number",number)

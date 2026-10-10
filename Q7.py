@@ -1,9 +1,8 @@
-import random
+#WAP to print all integers upto n that aren’t divisible by 2 and 3.
 
-user_id=int(input("Enter the user_id :"))
-password=int(input("Enter the password :"))
-if user_id="admin"and password=='1234':
-    captcha=random.randint(1000,9999)
-    print("yout captech is ",captcha)
-               if user_captecha=int(input("Enter the captech..."))
-    
+n=int(input("Enter the number :"))
+
+for i in range(1,n):
+    if i % 2 !=0 and i % 3!=0:
+        print(i)
+

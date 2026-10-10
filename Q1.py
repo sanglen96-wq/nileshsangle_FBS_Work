@@ -1,7 +1,8 @@
-#convert the time entered in hh,min,second,into second 
+#WAP to print all even numbers until 
 
-hh=int(input("Enter the hh :"))
-min=int(input("Enter the min :"))
-sec=int(input("Enter the sec :"))
-total_sec=(min*60)+(hh*3600)+sec
-print(f"total second are {total_sec}")
+i=0
+
+while(i<=100):
+    if(i%2==0):
+        print("even number ",i)
+    i=i+1

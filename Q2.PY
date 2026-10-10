@@ -1,15 +1,9 @@
-#Write a program to input any alphabet and check whether
-# it is vowel or consonant.
+#2. WAP to print all odd numbers until n.
 
-ch=str(input("Enter the your choice :"))
-if ch.isalpha():
-    print("this is the alphabet :",ch)
-    if ch.lower() in"aeiou":
-        print("is a vowel")
-        
-else:
-    if ch.isdigit():
-        print("this is the digit")
-    else:
-        print("Enter the valid...")
-print("program is the sucessful....")
+
+i=0
+
+while(i<=100):
+    if(i%2!=0):
+        print("odd number",i)
+    i=i+1
